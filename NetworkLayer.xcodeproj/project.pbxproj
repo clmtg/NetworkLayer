@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		565D3EF228ECB008001F2B88 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D3EE928ECB008001F2B88 /* NetworkLayer.framework */; };
 		565D3F0228ECB17A001F2B88 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0128ECB17A001F2B88 /* SampleTests.swift */; };
-		565D3F0428ECB1DF001F2B88 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0328ECB1DF001F2B88 /* Sample.swift */; };
 		565D3F0628ECB2B2001F2B88 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 565D3F0528ECB2B2001F2B88 /* README.md */; };
+		EB0CDF6B290A830000D64DD6 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF6A290A830000D64DD6 /* CategoriesList.swift */; };
+		EB0CDF6F290A872800D64DD6 /* CategoriesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF6E290A872800D64DD6 /* CategoriesLoader.swift */; };
+		EB0CDF71290A873300D64DD6 /* CategoriesDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF70290A873300D64DD6 /* CategoriesDecoder.swift */; };
+		EB0CDF74290AA1C200D64DD6 /* CategoriesLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF73290AA1C200D64DD6 /* CategoriesLoaderTest.swift */; };
+		EB0CDF78290AA22200D64DD6 /* HelpersForTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF77290AA22200D64DD6 /* HelpersForTests.swift */; };
+		EB0CDF7B290AAEA500D64DD6 /* ClientLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF7A290AAEA500D64DD6 /* ClientLoading.swift */; };
+		EB0CDF7D290AAFFB00D64DD6 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF7C290AAFFB00D64DD6 /* HttpClient.swift */; };
+		EB0CDF7F290AB39200D64DD6 /* HttpClientForTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CDF7E290AB39200D64DD6 /* HttpClientForTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +34,15 @@
 		565D3EE928ECB008001F2B88 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3EF128ECB008001F2B88 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3F0128ECB17A001F2B88 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
-		565D3F0328ECB1DF001F2B88 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		565D3F0528ECB2B2001F2B88 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EB0CDF6A290A830000D64DD6 /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
+		EB0CDF6E290A872800D64DD6 /* CategoriesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesLoader.swift; sourceTree = "<group>"; };
+		EB0CDF70290A873300D64DD6 /* CategoriesDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDecoder.swift; sourceTree = "<group>"; };
+		EB0CDF73290AA1C200D64DD6 /* CategoriesLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesLoaderTest.swift; sourceTree = "<group>"; };
+		EB0CDF77290AA22200D64DD6 /* HelpersForTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersForTests.swift; sourceTree = "<group>"; };
+		EB0CDF7A290AAEA500D64DD6 /* ClientLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoading.swift; sourceTree = "<group>"; };
+		EB0CDF7C290AAFFB00D64DD6 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		EB0CDF7E290AB39200D64DD6 /* HttpClientForTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientForTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +86,7 @@
 		565D3EEB28ECB008001F2B88 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				565D3F0328ECB1DF001F2B88 /* Sample.swift */,
+				EB0CDF68290A82CB00D64DD6 /* Model */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -80,9 +94,64 @@
 		565D3EF528ECB008001F2B88 /* NetworkLayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB0CDF77290AA22200D64DD6 /* HelpersForTests.swift */,
+				EB0CDF7E290AB39200D64DD6 /* HttpClientForTests.swift */,
+				EB0CDF72290AA18200D64DD6 /* Loaders */,
 				565D3F0128ECB17A001F2B88 /* SampleTests.swift */,
 			);
 			path = NetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		EB0CDF68290A82CB00D64DD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB0CDF79290AAE9000D64DD6 /* NetworkEngine */,
+				EB0CDF6C290A86D600D64DD6 /* Loaders */,
+				EB0CDF69290A82D000D64DD6 /* DataRepresentation */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB0CDF69290A82D000D64DD6 /* DataRepresentation */ = {
+			isa = PBXGroup;
+			children = (
+				EB0CDF6A290A830000D64DD6 /* CategoriesList.swift */,
+			);
+			path = DataRepresentation;
+			sourceTree = "<group>";
+		};
+		EB0CDF6C290A86D600D64DD6 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				EB0CDF6D290A86E400D64DD6 /* Categories */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		EB0CDF6D290A86E400D64DD6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EB0CDF6E290A872800D64DD6 /* CategoriesLoader.swift */,
+				EB0CDF70290A873300D64DD6 /* CategoriesDecoder.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EB0CDF72290AA18200D64DD6 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				EB0CDF73290AA1C200D64DD6 /* CategoriesLoaderTest.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		EB0CDF79290AAE9000D64DD6 /* NetworkEngine */ = {
+			isa = PBXGroup;
+			children = (
+				EB0CDF7A290AAEA500D64DD6 /* ClientLoading.swift */,
+				EB0CDF7C290AAFFB00D64DD6 /* HttpClient.swift */,
+			);
+			path = NetworkEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565D3F0428ECB1DF001F2B88 /* Sample.swift in Sources */,
+				EB0CDF7D290AAFFB00D64DD6 /* HttpClient.swift in Sources */,
+				EB0CDF6F290A872800D64DD6 /* CategoriesLoader.swift in Sources */,
+				EB0CDF71290A873300D64DD6 /* CategoriesDecoder.swift in Sources */,
+				EB0CDF6B290A830000D64DD6 /* CategoriesList.swift in Sources */,
+				EB0CDF7B290AAEA500D64DD6 /* ClientLoading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0CDF7F290AB39200D64DD6 /* HttpClientForTests.swift in Sources */,
+				EB0CDF74290AA1C200D64DD6 /* CategoriesLoaderTest.swift in Sources */,
+				EB0CDF78290AA22200D64DD6 /* HelpersForTests.swift in Sources */,
 				565D3F0228ECB17A001F2B88 /* SampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +421,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = CES656DH72;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -375,7 +451,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = CES656DH72;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -402,7 +478,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = CES656DH72;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.NetworkLayerTests;
@@ -418,7 +494,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = CES656DH72;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.NetworkLayerTests;
